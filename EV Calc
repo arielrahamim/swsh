@@ -1,6 +1,5 @@
 from flask import Flask
 
-
 base = 1
 list_count = []
 PowerItem = 8
@@ -81,191 +80,224 @@ WholeDayPowerPKRS_count = 0
 
 target = int(input("{Please Enter A Wanted EV \n"))
 currentEV = int(input("Please Enter Your Current EV Stat \n"))
-
+original_currentEV = currentEV
 
 # FirstBattle
 
 while FirstBattle + currentEV <= target:
     currentEV += FirstBattle
     FirstBattle_count += 1
-    list_count.append(FirstBattle_count)
+list_count.append(FirstBattle_count)
 
+
+currentEV = original_currentEV
 while FirstBattlePKRS + currentEV <= target:
     currentEV += FirstBattlePKRS
     FirstBattlePKRS_count += 1
-    list_count.append(FirstBattlePKRS_count)
+list_count.append(FirstBattlePKRS_count)
 
-
+currentEV = original_currentEV
 while FirstWithPower + currentEV <= target:
     currentEV += FirstBattlePKRS
     FirstBattlePKRS_count += 1
-    list_count.append(FirstBattlePKRS_count)
+list_count.append(FirstBattlePKRS_count)
 
+currentEV = original_currentEV
 while FirstWithPowerAndPKRS + currentEV <= target:
     currentEV += FirstWithPowerAndPKRS
     FirstWithPowerAndPKRS_count += 1
-    list_count.append(FirstWithPowerAndPKRS_count)
+list_count.append(FirstWithPowerAndPKRS_count)
 
 # A littleWhile
 
+currentEV = original_currentEV
 while ALittleWhile + currentEV <= target:
     currentEV += ALittleWhile
     ALittleWhile_count += 1
-    list_count.append(ALittleWhile_count)
+list_count.append(ALittleWhile_count)
 
+currentEV = original_currentEV
 while ALittleWhilePKRS + currentEV <= target:
     currentEV += ALittleWhilePKRS
     ALittleWhilePKRS_count += 1
-    list_count.append(ALittleWhilePower_count)
+list_count.append(ALittleWhilePKRS_count)
 
+currentEV = original_currentEV
 while ALittleWhilePower + currentEV <= target:
     currentEV += ALittleWhilePower
     ALittleWhilePower_count += 1
-    list_count.append(ALittleWhilePower_count)
+list_count.append(ALittleWhilePower_count)
 
+currentEV = original_currentEV
 while ALittleWhilePowerPKRS + currentEV <= target:
     currentEV += ALittleWhilePowerPKRS
     ALittleWhilePowerPKRS_count += 1
-    list_count.append(ALittleWhilePowerPKRS_count)
+list_count.append(ALittleWhilePowerPKRS_count)
 
 # VeryShort
 
+currentEV = original_currentEV
 while VeryShort + currentEV <= target:
     currentEV += VeryShort
     VeryShort_count += 1
-    list_count.append(VeryShort_count)
+list_count.append(VeryShort_count)
 
-
+currentEV = original_currentEV
 while VeryShortPKRS + currentEV <= target:
     currentEV += VeryShortPKRS
     VeryShortPKRS_count += 1
-    list_count.append(VeryShortPower_count)
+list_count.append(VeryShortPKRS_count)
 
+currentEV = original_currentEV
 while VeryShortPower + currentEV <= target:
     currentEV += VeryShortPower
     VeryShortPower_count += 1
-    list_count.append(VeryShortPower_count)
+list_count.append(VeryShortPower_count)
 
+currentEV = original_currentEV
 while VeryShortPowerPKRS + currentEV <= target:
     currentEV += VeryShortPowerPKRS
     VeryShortPowerPKRS_count += 1
-    list_count.append(VeryShortPowerPKRS_count)
+list_count.append(VeryShortPowerPKRS_count)
 
 # Short
 
+currentEV = original_currentEV
 while Short + currentEV <= target:
     currentEV += Short
     Short_count += 1
-    list_count.append(Short_count)
+list_count.append(Short_count)
 
+currentEV = original_currentEV
 while ShortPKRS + currentEV <= target:
     currentEV += ShortPKRS
     ShortPKRS_count += 1
-    list_count.append(ShortPKRS_count)
+list_count.append(ShortPKRS_count)
 
+currentEV = original_currentEV
 while ShortPower + currentEV <= target:
     currentEV += ShortPower
     ShortPower_count += 1
-    list_count.append(ShortPower_count)
+list_count.append(ShortPower_count)
 
+currentEV = original_currentEV
 while ShortPowerPKRS + currentEV <= target:
     currentEV += ShortPowerPKRS
     ShortPowerPKRS_count += 1
-    list_count.append(ShortPower_count)
+list_count.append(ShortPower_count)
 
 # Long
 
+currentEV = original_currentEV
 while Long + currentEV <= target:
     currentEV += Long
     Long_count += 1
-    list_count.append(Long_count)
+list_count.append(Long_count)
 
 
+currentEV = original_currentEV
 while LongPKRS + currentEV <= target:
     currentEV += LongPKRS
     LongPKRS_count += 1
-    list_count.append(LongPKRS_count)
+list_count.append(LongPKRS_count)
 
 
+currentEV = original_currentEV
 while LongPower + currentEV <= target:
     currentEV += LongPower
     LongPower_count += 1
-    list_count.append(LongPower_count)
+list_count.append(LongPower_count)
 
 
+currentEV = original_currentEV
 while LongPowerPKRS + currentEV <= target:
     currentEV += LongPowerPKRS
     LongPowerPKRS_count += 1
-    list_count.append(LongPowerPKRS_count)
+list_count.append(LongPowerPKRS_count)
 
 # VeryLong
 
+currentEV = original_currentEV
 while VeryLong + currentEV <= target:
     currentEV += VeryLong
     VeryLong_count += 1
-    list_count.append(VeryLong_count)
+list_count.append(VeryLong_count)
 
 
+currentEV = original_currentEV
 while VeryLongPKRS + currentEV <= target:
     currentEV += VeryLongPKRS
     VeryLongPKRS += 1
-    list_count.append(VeryLongPKRS_count)
+list_count.append(VeryLongPKRS_count)
 
 
+currentEV = original_currentEV
 while VeryLongPower + currentEV <= target:
     currentEV += VeryLongPower
     VeryLongPower_count += 1
-    list_count.append(VeryLongPower_count)
+list_count.append(VeryLongPower_count)
 
 
+currentEV = original_currentEV
 while VeryLongPowerPKRS + currentEV <= target:
     currentEV += VeryLongPowerPKRS
     VeryLongPowerPKRS += 1
-    list_count.append(VeryLongPKRS_count)
+list_count.append(VeryLongPowerPKRS_count)
 
 
 # HalfDay
 
+currentEV = original_currentEV
 while HalfDay + currentEV <= target:
     currentEV += HalfDay
     HalfDay_count += 1
-    list_count.append(HalfDay_count)
+list_count.append(HalfDay_count)
 
 
+currentEV = original_currentEV
 while HalfDayPKRS + currentEV <= target:
     currentEV += HalfDayPKRS
     HalfDayPKRS_count += 1
-    list_count.append(HalfDayPKRS_count)
+list_count.append(HalfDayPKRS_count)
 
+currentEV = original_currentEV
 while HalfDayPower + currentEV <= target:
     currentEV += HalfDayPower
     HalfDayPower_count += 1
-    list_count.append(HalfDayPower_count)
+list_count.append(HalfDayPower_count)
 
+currentEV = original_currentEV
 while HalfDayPowerPKRS + currentEV <= target:
     currentEV += HalfDayPowerPKRS
     HalfDayPowerPKRS_count += 1
-    list_count.append(HalfDayPowerPKRS_count)
+list_count.append(HalfDayPowerPKRS_count)
+
 # WholeDay
 
+currentEV = original_currentEV
 while WholeDay + currentEV <= target:
     currentEV += WholeDay
     WholeDay_count += 1
-    list_count.append(WholeDay_count)
+list_count.append(WholeDay_count)
 
+currentEV = original_currentEV
 while WholeDayPKRS + currentEV <= target:
     currentEV += WholeDayPKRS
     WholeDayPKRS_count += 1
-    list_count.append(WholeDayPKRS_count)
+list_count.append(WholeDayPKRS_count)
 
+currentEV = original_currentEV
 while WholeDayPower + currentEV <= target:
     currentEV += WholeDayPower
     WholeDayPower_count += 1
-    list_count.append(WholeDayPower_count)
+list_count.append(WholeDayPower_count)
 
+currentEV = original_currentEV
 while WholeDayPowerPKRS + currentEV <= target:
     currentEV += WholeDayPowerPKRS
     WholeDayPowerPKRS_count += 1
-    list_count.append(WholeDayPowerPKRS_count)
+list_count.append(WholeDayPowerPKRS_count)
 
 min_list = min(list_count)
+
+print(list_count)
