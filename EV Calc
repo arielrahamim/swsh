@@ -227,7 +227,7 @@ list_count.append(VeryLong_count)
 currentEV = original_currentEV
 while VeryLongPKRS + currentEV <= target:
     currentEV += VeryLongPKRS
-    VeryLongPKRS += 1
+    VeryLongPKRS_count += 1
 list_count.append(VeryLongPKRS_count)
 
 
@@ -241,7 +241,7 @@ list_count.append(VeryLongPower_count)
 currentEV = original_currentEV
 while VeryLongPowerPKRS + currentEV <= target:
     currentEV += VeryLongPowerPKRS
-    VeryLongPowerPKRS += 1
+    VeryLongPowerPKRS_count += 1
 list_count.append(VeryLongPowerPKRS_count)
 
 
